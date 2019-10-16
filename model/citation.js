@@ -15,6 +15,11 @@ const CitationSchema = new Schema({
     required: true
   }
 });
-
+  // firstEditionYear
+  // publishPlace
+  // spanishYearEdition,
+  // editionPlace
+  // otherAuthors,
+  // bookArticle.
 const CitationModel = mongoose.model('quote', CitationSchema);
 module.exports = CitationModel;

@@ -8,7 +8,7 @@ app.use(express.static('public'));
 app.use(cors());
 app.use(express.json());
 
-app.get('/', citationController.getQuotes);
+app.get('/quotes', citationController.getQuotes);
 app.delete('/quote/:id', citationController.deleteQuote);
 app.post('/quote', citationController.saveQuote);
 app.put('/quote', citationController.updateQuote);
